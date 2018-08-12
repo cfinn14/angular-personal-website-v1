@@ -9,4 +9,11 @@
         <div class='col-sm desc' [innerHtml]='descriptionMain'></div>
     </div>
 </div>
-<app-heroes></app-heroes>
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <br>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<footer><app-messages></app-messages></footer>
+

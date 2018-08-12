@@ -6,16 +6,19 @@ import { HeroesComponent } from './modules/hero/components/heroes/heroes.compone
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './modules/hero/components/hero-detail/hero-detail.component';
 import { MessagesComponent } from './modules/message/components/messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './modules/dashboard/components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, FormsModule
+    BrowserModule, BrowserAnimationsModule, FormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
