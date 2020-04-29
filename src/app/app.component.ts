@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {trigger, style, state, animate, transition} from '@angular/animations';
-import { Hero } from '@modules/hero/hero'
+import { Hero } from '@modules/hero/hero';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,14 +8,13 @@ import { Hero } from '@modules/hero/hero'
 })
 export class AppComponent {
   title = `Conor<br>Finnegan`;
-  descriptionMain = 'This is a work in progress for the time being.  The main goal is for me to learn more about front end development.'
-  
+  descriptionMain = 'This is a work in progress for the time being.  The main goal is for me to learn more about front end development.';
   show = false;
 
   constructor() { }
 
   get stateName() {
-    return this.show ? 'show' : 'hide'
+    return this.show ? 'show' : 'hide';
   }
 
 }
