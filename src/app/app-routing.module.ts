@@ -8,8 +8,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'heroes', component: HeroesComponent },
-  { path: 'detail/:id', component: HeroDetailComponent }
-
+  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'nQueens', loadChildren: '@modules/recursion-practice/recursion-practice.module#RecursionPracticeModule'}
 ];
 
 @NgModule({
@@ -17,4 +17,3 @@ const routes: Routes = [
   exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
-

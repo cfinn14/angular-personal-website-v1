@@ -8,6 +8,8 @@ import { HeroDetailComponent } from './modules/hero/components/hero-detail/hero-
 import { MessagesComponent } from './modules/message/components/messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './modules/dashboard/components/dashboard/dashboard.component';
+import { RecursionPracticeModule } from '@modules/recursion-practice/recursion-practice.module';
+import { NQueensComponent } from '@modules/recursion-practice/n-queens/components/n-queens.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { DashboardComponent } from './modules/dashboard/components/dashboard/das
     DashboardComponent
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, FormsModule, AppRoutingModule
+    BrowserModule, BrowserAnimationsModule, FormsModule, AppRoutingModule, RecursionPracticeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
